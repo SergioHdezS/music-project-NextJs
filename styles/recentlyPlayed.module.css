@@ -1,0 +1,39 @@
+.song {
+    display: flex; 
+    margin-left: 0.75rem; 
+    margin-left: 0.875rem; 
+    align-items: center; 
+}
+
+.albumImage{
+    border-radius: 9999px; 
+    width: 52px;
+    height: 52px;
+}
+
+.title {
+    margin-bottom: 0.125rem; 
+    color: #ffffff; 
+    font-weight: 600; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    cursor: pointer; 
+    color: 13px;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.artist {
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+    color: #686868;
+}
+
+.artist:hover {
+    text-decoration: underline;
+}

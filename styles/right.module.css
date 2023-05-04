@@ -1,0 +1,90 @@
+.rightSection {
+    padding: 1rem; 
+    padding-right: 2rem; 
+    margin-top: 2rem; 
+}
+
+.viewAllButton {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    --bg-opacity: 0.8; 
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; 
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
+    font-weight: 700; 
+    width: 100%; 
+    border-radius: 1rem; 
+    color: #CECECE;
+    background: #1A1A1A;
+    color: 13px;
+}
+
+.viewAllButton:hover {
+    --bg-opacity: 1; 
+}
+
+.rightsideTop {
+    display: flex; 
+    margin-left: 0.5rem; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.rightsideTopIcons {
+    display: flex; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-left: 1rem; 
+    align-items: center; 
+    height: 3rem; 
+    border-radius: 9999px; 
+    border-width: 2px; 
+}
+
+.rightsideTopIcon {
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    color: #CCCCCC;
+}
+
+.recentlyPlayed {
+    padding: 1rem; 
+    margin-top: 1rem; 
+    border-radius: 0.75rem; 
+    border-width: 2px; 
+    background: #0D0D0D;
+}
+
+.recentlyPlayedTop {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.recentlyPlayedTitle {
+    color: #ffffff; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+}
+
+.recentlyPlayedIcon {
+    height: 1.5rem; 
+    color: #686868;
+}
+
+.recentlyPlayedList {
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    margin-top: 1rem; 
+    height: 250px;
+}
+
+@media (min-width: 768px) { 
+    .recentlyPlayedList{
+        height: 400px;
+    }
+}

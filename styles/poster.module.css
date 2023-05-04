@@ -1,0 +1,84 @@
+.poster {
+    width: 260px;
+    height: 360px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 200ms ease-out;
+    margin: 0 auto;
+}
+
+.poster:hover {
+        transform: scale(1.05);
+        color: #fff;
+}
+
+.albumImage {
+    /* h-full w-full absolute inset-0 object-cover rounded-[50px] opacity-80 group-hover:opacity-100 */
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    opacity: 0.8; 
+}
+
+.albumImage:hover {
+    opacity: 100;
+}
+
+.title {
+    font-weight: 800; 
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap; 
+width: 11rem; 
+}
+
+.songInfo {
+    font-size: 15px;
+}
+
+.playIcon {
+    color: #ffffff; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+}
+
+.pauseIcon {
+    color: #ffffff; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    margin-left: 1px;
+}
+
+.icons {
+    /* h-10 w-10 bg-[#15883e] rounded-full flex items-center justify-center group-hover:bg-[#1db954] flex-shrink-0 */
+    display: flex; 
+    flex-shrink: 0; 
+    justify-content: center; 
+    align-items: center; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    border-radius: 9999px; 
+    background: #15883e;
+}
+
+.icons:hover {
+    background: #1db954;
+}
+
+.bottom {
+    display: flex; 
+    position: absolute; 
+    right: 0;
+    left: 0; 
+    bottom: 2.5rem; 
+    margin-left: 1rem; 
+    align-items: center;     
+}

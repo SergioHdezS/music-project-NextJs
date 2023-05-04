@@ -1,0 +1,40 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    background-color: black;
+    width: 90px;
+    height: 100vh;
+}
+
+.image{
+    object-fit: contain; 
+}
+
+.icons {
+    display: flex; 
+    margin-top: 2rem; 
+    flex-direction: column; 
+}
+
+.sidebarIcon, .home, .riCompassFill, .faMicrophoneAlt {
+    height: 1.5rem; 
+    cursor: pointer; 
+    color: white;
+}
+.sidebarIcon:hover, .home:hover, .riCompassFill:hover, .faMicrophoneAlt:hover{
+    color: green;
+}
+
+.riCompassFill {
+    font-size: 1.5rem;
+    line-height: 2rem; 
+}
+
+.faMicrophoneAlt {
+    margin-left: 0.25rem;
+}

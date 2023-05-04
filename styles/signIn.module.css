@@ -1,0 +1,25 @@
+.button {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; 
+    transition-duration: 300ms; 
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
+    color: #ffffff; 
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    font-weight: 700; 
+    letter-spacing: 0.05em; 
+    text-transform: uppercase; 
+    border-radius: 9999px; 
+    border-width: 1px; 
+    border-color: transparent; 
+    background: #1db954;
+}
+
+.button:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05; 
+    background: #0db146;
+}

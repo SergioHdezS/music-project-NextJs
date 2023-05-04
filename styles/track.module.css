@@ -1,0 +1,153 @@
+.song {
+    display: flex; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-left: 5rem; 
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 0.5rem; 
+    cursor: default; 
+    color: white;
+}
+
+.song:hover {
+    background-color: #323232   ;
+}
+
+.songInfo {
+    display: flex; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-left: 5rem; 
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform; 
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 0.5rem; 
+    cursor: default; 
+}
+
+.title{
+    color: #ffffff; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 450px;
+}
+
+.artist {
+    font-weight: 600; 
+    color: rgb(179,179,179);
+    color: 13px;
+}
+
+.albumImage {
+    object-fit: cover; 
+    margin-right: 0.75rem; 
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 0.75rem; 
+}
+
+.icons{
+    display: flex; 
+    margin-left: 0.625rem; 
+    align-items: center; 
+}
+
+.headphonesIcon {
+    display: flex; 
+    margin-left: 0.25rem; 
+    color: #ffffff; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+}
+
+.headphones {
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+}
+
+.popularity {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+.iconsContainer {
+    display: flex; 
+    position: relative; 
+    align-items: center; 
+    height: 2.5rem; 
+    border-radius: 9999px; 
+    border-width: 2px; 
+    cursor: pointer; 
+    width: 85px;
+    border-color: white;
+}
+
+.iconsContainer:hover {
+    opacity: 40;
+}
+
+.play {
+    display: flex; 
+    position: absolute; 
+    right: -0.125rem; 
+    justify-content: center; 
+    align-items: center; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    border-radius: 9999px; 
+    border-width: 1px; 
+    background: #15883e;
+}
+
+.play:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1; 
+}
+
+.pause {
+    display: flex; 
+    position: absolute; 
+    right: -0.125rem; 
+    justify-content: center; 
+    align-items: center; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    border-radius: 9999px; 
+    border-width: 1px; 
+}
+
+.pause:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1; 
+    background: #15883e;
+}
+
+.playIcon{
+    color: #ffffff; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+}
+
+.pauseIcon {
+    color: #ffffff; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    margin-left: 1px;
+}
+
+@media (min-width: 768px) { 
+    .icons{
+        margin-left: auto;
+    } 
+}
