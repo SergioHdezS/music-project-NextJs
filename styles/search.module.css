@@ -9,6 +9,15 @@
     border-radius: 9999px; 
     border-width: 2px; 
     background: #1A1A1A;
+    border-color: gray;
+    border-style: solid;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.searchBar:hover {
+    border-color: #ffffff;
+    border-style: solid;
 }
 
 .searchBarInput {
@@ -18,10 +27,4 @@
     border-style: none; 
     outline: 0; 
     background: #1A1A1A;
-}
-
-@media (min-width: 1024px) {
-    .searchBarInput {
-        width: 100%; 
-    } 
 }

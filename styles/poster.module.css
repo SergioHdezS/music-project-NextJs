@@ -58,7 +58,6 @@ width: 11rem;
 }
 
 .icons {
-    /* h-10 w-10 bg-[#15883e] rounded-full flex items-center justify-center group-hover:bg-[#1db954] flex-shrink-0 */
     display: flex; 
     flex-shrink: 0; 
     justify-content: center; 

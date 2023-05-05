@@ -3,7 +3,8 @@ import React, { useEffect } from 'react'
 import Image from "next/image";
 import { getProviders, signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
-import styles from '../styles/signIn.module.css';
+import Loader from '@/components/Loader';
+import styles from './signIn.module.css';
 
 function Signin({ providers }) {
     const { data: session } = useSession();
@@ -19,7 +20,7 @@ function Signin({ providers }) {
     if (session) return <Loader />;
 
     return (
-        <div className="bg-black h-screen flex flex-col items-center pt-40 space-y-8">
+        <div className={styles.page}>
             <Head>
                 <title>Login - Spotify</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -29,7 +30,7 @@ function Signin({ providers }) {
                 height={250}
                 width={600}
                 objectFit="contain"
-                className="animate-pulse"
+                className={styles.animation}
             />
             {Object.values(providers).map((provider) => (
                 <div key={provider.name}>

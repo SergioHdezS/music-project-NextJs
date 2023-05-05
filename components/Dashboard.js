@@ -7,8 +7,8 @@ import Player from "./Player";
 import { useRecoilState } from "recoil";
 import Body from "./Body";
 import Right from "./Right";
-import { playingTrackState } from '@/atoms/playerAtom';
 import styles from '../styles/dashboard.module.css';
+import { playingTrackState } from '@/atoms/playerAtom';
 
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.SPOTIFY_CLIENT_ID,
@@ -35,16 +35,25 @@ function Dashboard() {
   }, [accessToken]);
 
   return (
-    <main className={styles.name}>
-      <Sidebar />
-      <Body chooseTrack={chooseTrack} spotifyApi={spotifyApi} />
-      <Right chooseTrack={chooseTrack} spotifyApi={spotifyApi} />
-
-      {showPlayer && (
-        <div className="player">
-          <Player accessToken={accessToken} trackUri={playingTrack.uri} />
+    <main className={styles.main}>
+      <div className={styles.topside}>
+        <div classname={styles.sidebar}>
+          <Sidebar  />
         </div>
-      )}
+        <div classname={styles.body}>
+          <Body chooseTrack={chooseTrack} spotifyApi={spotifyApi} />
+        </div>
+        <div className={styles.right}>
+          <Right chooseTrack={chooseTrack} spotifyApi={spotifyApi} />
+        </div>
+      </div>
+      <div className={styles.botside}>
+        {showPlayer && (
+          <div className="player">
+            <Player accessToken={accessToken} trackUri={playingTrack.uri} />
+          </div>
+        )}
+      </div>
     </main>
   );
 }

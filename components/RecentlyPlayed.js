@@ -15,6 +15,7 @@ function RecentlyPlayed({ track, chooseTrack }) {
             setPlay(!play);
         }
     };
+    
 
     return (
         <div className={styles.song} onClick={handlePlay}>

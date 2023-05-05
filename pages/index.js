@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Dashboard from '@/components/Dashboard'
 import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
+import Loader from '@/components/Loader';
 
 export default function Home() {
   const router = useRouter();
@@ -12,9 +13,14 @@ export default function Home() {
     },
   });
 
+      // Loading animation...
+      if (status === "loading") {
+        return <Loader />;
+      }
+
   console.log(session);
   return (
-    <div className=''>
+    <div>
       <Head>
         <title>Spotify Dashboard</title>
         <link rel='icon' href='/favicon.ico'/>

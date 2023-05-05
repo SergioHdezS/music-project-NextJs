@@ -1,20 +1,33 @@
 .main {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    min-width: 100%;
-    background-color: black;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.player {
+.topside {
+    display: grid;
+    grid-template-areas: 
+        "sidebar body body body body right right"
+    ;
+}
+
+.sidebar{
+    grid-area: "sidebar";
+}
+
+.body{
+    grid-area: "body";
+}
+
+.right{
+    grid-area: "right";
+}
+
+.botside {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 50;
-}
-
-@media (min-width: 1024px) {
-    .main {
-        padding-bottom: 6rem;
-    }
 }
