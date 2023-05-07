@@ -1,13 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import {
-    ChartBarIcon,
-    ClockIcon,
-    DotsHorizontalIcon,
-    HomeIcon,
-} from "@heroicons/react/solid";
-import { FaMicrophoneAlt } from "react-icons/fa";
-import { RiCompassFill } from "react-icons/ri";
 import styles from '../styles/sidebar.module.css';
 import { signOut, useSession } from 'next-auth/react';
 import { LogoutIcon } from '@heroicons/react/outline';
